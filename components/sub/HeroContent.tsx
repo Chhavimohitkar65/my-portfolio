@@ -11,9 +11,9 @@ import {
 } from "@/utils/motion";
 
 import Image from "next/image";
+import profilePhoto from "../../public/photo.jpg";
 
 // Import the profile photo
-import profilePhoto from "V:/MINE_PORTFOLIO/Space-Portolio-main/public/photo.jpg";
 
 const HeroContent = () => {
   return (
