@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { ReactNode } from "react";
 import AchievementCard from "../sub/AchievementCard";
 
 const Achievements = () => {
@@ -41,7 +40,10 @@ const Achievements = () => {
   );
 };
 
-const AchievementCardContainer = ({ children }) => {
+// Specify type for children prop
+const AchievementCardContainer: React.FC<{ children: ReactNode }> = ({
+  children,
+}) => {
   return <div className="flex-1">{children}</div>;
 };
 
